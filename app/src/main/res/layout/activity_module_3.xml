@@ -9,9 +9,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/module_3"
+        android:id="@+id/lesson_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Module 3"/>
+        android:text="Lesson 2: Dialog Activity"/>
 </LinearLayout>
