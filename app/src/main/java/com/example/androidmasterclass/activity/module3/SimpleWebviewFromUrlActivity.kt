@@ -5,7 +5,7 @@ import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmasterclass.R
 
-class SimpleWebviewActivity : AppCompatActivity(){
+class SimpleWebviewFromUrlActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_simple_webview)

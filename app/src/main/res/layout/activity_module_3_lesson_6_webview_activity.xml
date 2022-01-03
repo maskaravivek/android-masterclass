@@ -14,4 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="Load Educative in Webview"/>
+
+    <Button
+        android:id="@+id/load_data_in_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Load Data in Webview"/>
 </LinearLayout>
