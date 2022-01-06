@@ -16,12 +16,7 @@
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.SimpleWebviewFromUrlActivity"
-            android:exported="false"
-            android:label="@string/title_activity_simple_webview"
-            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
-        <activity
-            android:name=".activity.module3.SimpleWebviewWithDataActivity"
+            android:name=".activity.module3.SimpleWebviewDemoActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />

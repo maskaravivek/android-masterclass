@@ -21,4 +21,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="Load Data in Webview"/>
+
+    <Button
+        android:id="@+id/load_url_in_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Load Educative in dark mode"/>
 </LinearLayout>

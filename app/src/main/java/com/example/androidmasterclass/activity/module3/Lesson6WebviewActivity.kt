@@ -12,6 +12,7 @@ class Lesson6WebviewActivity : AppCompatActivity(){
         setContentView(R.layout.activity_module_3_lesson_6_webview_activity)
         addOpenUrlInWebviewHandler()
         addLoadDataInWebviewHandler()
+        loadUrlInDarkModeHandler()
     }
 
     private fun addOpenUrlInWebviewHandler(){
@@ -19,7 +20,8 @@ class Lesson6WebviewActivity : AppCompatActivity(){
         val btn_click_me=findViewById(R.id.load_url_in_webview)as Button
         // set on-click listener
         btn_click_me.setOnClickListener{
-            val intent = Intent(this, SimpleWebviewFromUrlActivity::class.java)
+            val intent = Intent(this, SimpleWebviewDemoActivity::class.java)
+            intent.putExtra("action", "loadUrl")
             startActivity(intent)
         }
     }
@@ -29,7 +31,19 @@ class Lesson6WebviewActivity : AppCompatActivity(){
         val btn_click_me=findViewById(R.id.load_data_in_webview)as Button
         // set on-click listener
         btn_click_me.setOnClickListener{
-            val intent = Intent(this, SimpleWebviewWithDataActivity::class.java)
+            val intent = Intent(this, SimpleWebviewDemoActivity::class.java)
+            intent.putExtra("action", "loadData")
+            startActivity(intent)
+        }
+    }
+
+    private fun loadUrlInDarkModeHandler(){
+        // get reference to button
+        val btn_click_me=findViewById(R.id.load_url_in_dark_mode)as Button
+        // set on-click listener
+        btn_click_me.setOnClickListener{
+            val intent = Intent(this, SimpleWebviewDemoActivity::class.java)
+            intent.putExtra("action", "darkMode")
             startActivity(intent)
         }
     }
