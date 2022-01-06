@@ -6,4 +6,10 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="lesson_1_bottom_navigation_bar">Lesson 1: Bottom Navigation Bar</string>
+    <string name="lesson_2_dialogs">Lesson 2: Dialogs</string>
+    <string name="lesson_6_webviews">Lesson 6: Webviews</string>
+    <string name="lesson_3_images">Lesson 3: Images</string>
+    <string name="lesson_4_menus">Lesson 4: Menus</string>
+    <string name="lesson_4_recycler_views">Lesson 4: Recycler Views</string>
 </resources>

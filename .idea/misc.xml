@@ -6,11 +6,15 @@
         <entry key="../../../../../../layout/custom_preview.xml" value="0.2851851851851852" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15416666666666667" />
         <entry key="app/src/main/res/layout/activity_module_3.xml" value="0.1752786220871327" />
+        <entry key="app/src/main/res/layout/activity_module_3_lesson1_bottom_nav_bar.xml" value="0.1752786220871327" />
         <entry key="app/src/main/res/layout/activity_module_3_lesson_1_dialog_activity.xml" value="0.1752786220871327" />
         <entry key="app/src/main/res/layout/activity_module_3_lesson_2_dialog_activity.xml" value="0.1752786220871327" />
         <entry key="app/src/main/res/layout/activity_module_3_lesson_6_webview_activity.xml" value="0.1752786220871327" />
         <entry key="app/src/main/res/layout/activity_simple_webview.xml" value="0.1752786220871327" />
         <entry key="app/src/main/res/layout/dialog_custom_login_fragment.xml" value="0.1752786220871327" />
+        <entry key="app/src/main/res/layout/fragment_bottom_tab.xml" value="0.1752786220871327" />
+        <entry key="app/src/main/res/layout/menu_bottom_navigation.xml" value="0.1752786220871327" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.14114583333333333" />
       </map>
     </option>
   </component>

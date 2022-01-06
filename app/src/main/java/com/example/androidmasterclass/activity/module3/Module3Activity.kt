@@ -10,8 +10,17 @@ class Module3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_module_3)
+        startLesson1()
         startLesson2()
         startLesson6()
+    }
+
+    private fun startLesson1() {
+        val button = findViewById(R.id.lesson_1) as Button
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson1BottomNavigationActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun startLesson2() {
