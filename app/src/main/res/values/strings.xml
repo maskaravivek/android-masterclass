@@ -12,4 +12,5 @@
     <string name="lesson_3_images">Lesson 3: Images</string>
     <string name="lesson_4_menus">Lesson 4: Menus</string>
     <string name="lesson_4_recycler_views">Lesson 4: Recycler Views</string>
+    <string name="simple_recycler_view">Simple recycler view</string>
 </resources>
