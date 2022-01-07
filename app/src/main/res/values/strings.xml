@@ -19,4 +19,8 @@
     <string name="overflow_button">Overflow Button</string>
     <string name="popup_menu">Popup Menu</string>
     <string name="context_menu">Context Menu</string>
+    <string name="show_image">Show Image</string>
+    <string name="simple_image">Simple Image</string>
+    <string name="show_downloaded_image">Show downloaded image</string>
+    <string name="show_image_from_url">Show image from URL</string>
 </resources>

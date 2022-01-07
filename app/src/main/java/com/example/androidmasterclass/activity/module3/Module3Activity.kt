@@ -12,6 +12,7 @@ class Module3Activity : AppCompatActivity() {
         setContentView(R.layout.activity_module_3)
         startLesson1()
         startLesson2()
+        startLesson3()
         startLesson4()
         startLesson5()
         startLesson6()
@@ -29,6 +30,14 @@ class Module3Activity : AppCompatActivity() {
         val button = findViewById(R.id.lesson_2) as Button
         button.setOnClickListener {
             val intent = Intent(this, Lesson2DialogActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startLesson3() {
+        val button = findViewById(R.id.lesson_3) as Button
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson3ImagesActivity::class.java)
             startActivity(intent)
         }
     }
