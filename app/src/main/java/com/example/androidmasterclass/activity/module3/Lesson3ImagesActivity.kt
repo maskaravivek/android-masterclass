@@ -12,6 +12,7 @@ class Lesson3ImagesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_module_3_lesson_3_images)
         showSimpleImageEventHandler()
         showImageFromUrlEventHandler()
+        showImageFromUrlUsingFrescoEventHandler()
     }
 
     private fun showSimpleImageEventHandler() {
@@ -31,7 +32,18 @@ class Lesson3ImagesActivity : AppCompatActivity() {
         // set on-click listener
         btn_click_me.setOnClickListener {
             val intent = Intent(this, ImagesActivity::class.java)
-            intent.putExtra("action", "imageFromUrl")
+            intent.putExtra("action", "bitmapImage")
+            startActivity(intent)
+        }
+    }
+
+    private fun showImageFromUrlUsingFrescoEventHandler() {
+        // get reference to button
+        val btn_click_me = findViewById(R.id.show_fresco_image) as Button
+        // set on-click listener
+        btn_click_me.setOnClickListener {
+            val intent = Intent(this, ImagesActivity::class.java)
+            intent.putExtra("action", "frescoImage")
             startActivity(intent)
         }
     }

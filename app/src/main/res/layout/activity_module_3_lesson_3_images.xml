@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="@string/show_image_from_url" />
+
+    <Button
+        android:id="@+id/show_fresco_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/show_image_using_fresco" />
 </LinearLayout>

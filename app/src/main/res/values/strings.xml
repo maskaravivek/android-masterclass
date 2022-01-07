@@ -23,4 +23,5 @@
     <string name="simple_image">Simple Image</string>
     <string name="show_downloaded_image">Show downloaded image</string>
     <string name="show_image_from_url">Show image from URL</string>
+    <string name="show_image_using_fresco">Show image using Fresco</string>
 </resources>
