@@ -13,4 +13,10 @@
     <string name="lesson_4_menus">Lesson 4: Menus</string>
     <string name="lesson_4_recycler_views">Lesson 4: Recycler Views</string>
     <string name="simple_recycler_view">Simple recycler view</string>
+    <string name="options_menu">Options Menu</string>
+    <string name="new_game">New Game</string>
+    <string name="help">Help</string>
+    <string name="overflow_button">Overflow Button</string>
+    <string name="popup_menu">Popup Menu</string>
+    <string name="context_menu">Context Menu</string>
 </resources>

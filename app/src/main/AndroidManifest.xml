@@ -21,6 +21,15 @@
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
+            android:name=".activity.module3.Lesson4MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_simple_webview"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+        <activity
+            android:name=".activity.module3.MenuActivity"
+            android:exported="false"
+            android:label="Menus" />
+        <activity
             android:name=".activity.module3.Lesson1BottomNavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
