@@ -11,6 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass" >
         <activity
+            android:name=".activity.module2.Lesson3ExampleActivityWithFragment"
+            android:exported="false"
+            android:label="@string/title_activity_example_with_fragment"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+        <activity
+            android:name=".activity.module2.Lesson2ExampleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_example"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+        <activity
+            android:name=".activity.module2.Lesson4ExampleActivityWithInfoView"
+            android:exported="false"
+            android:label="@string/title_activity_example_custom_view"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+        <activity
             android:name=".activity.module3.Lesson6WebviewActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"

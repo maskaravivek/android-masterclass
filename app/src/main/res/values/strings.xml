@@ -24,4 +24,10 @@
     <string name="show_downloaded_image">Show downloaded image</string>
     <string name="show_image_from_url">Show image from URL</string>
     <string name="show_image_using_fresco">Show image using Fresco</string>
+    <string name="title_activity_example_custom_view">CustomViewActivity</string>
+    <string name="lesson_2_activity">Lesson 2: Activity</string>
+    <string name="lesson_3_fragments">Lesson 3: Fragments</string>
+    <string name="lesson_4_custom_views">Lesson 4: Custom Views</string>
+    <string name="title_activity_example_with_fragment">ActivityWithFragment</string>
+    <string name="title_activity_example">ExampleActivity</string>
 </resources>

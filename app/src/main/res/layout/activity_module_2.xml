@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/module_2"
+        android:id="@+id/lesson_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Module 2"/>
+        android:text="@string/lesson_2_activity" />
 
     <Button
-        android:id="@+id/module_3"
+        android:id="@+id/lesson_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Module 3"/>
+        android:text="@string/lesson_3_fragments" />
+
+    <Button
+        android:id="@+id/lesson_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/lesson_4_custom_views" />
 </LinearLayout>
