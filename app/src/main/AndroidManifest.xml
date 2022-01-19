@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass" >
         <activity
+            android:name=".activity.module2.Module2Activity"
+            android:exported="false" />
+        <activity
             android:name=".activity.module2.Lesson3ExampleActivityWithFragment"
             android:exported="false"
             android:label="@string/title_activity_example_with_fragment"
