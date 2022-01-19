@@ -10,7 +10,7 @@ class Lesson2ExampleActivity : Activity() {
     private var count = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_activity_example_2_lesson)
+        setContentView(R.layout.activity_module_2_lesson_2)
         tvCounter = findViewById(R.id.tv_counter)
     }
 

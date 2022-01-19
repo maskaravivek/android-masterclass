@@ -17,6 +17,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:background="@color/design_default_color_secondary_variant"
-        android:name="com.example.androidmasterclass.fragments.module2.Lesson3ExampleFragment"/>
+        android:name="com.example.androidmasterclass.fragments.module2.Module2Lesson3ExampleFragment"/>
 
 </LinearLayout>

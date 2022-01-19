@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.androidmasterclass.R
 
-class Lesson3ExampleFragment : Fragment() {
+class Module2Lesson3ExampleFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.layout_example_fragment_lesson_2, container, false)
+        return inflater.inflate(R.layout.fragment_module_2_lesson_3, container, false)
     }
 }
