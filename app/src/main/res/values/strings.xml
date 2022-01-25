@@ -30,4 +30,7 @@
     <string name="lesson_4_custom_views">Lesson 4: Custom Views</string>
     <string name="title_activity_example_with_fragment">ActivityWithFragment</string>
     <string name="title_activity_example">ExampleActivity</string>
+    <string name="counter">Counter</string>
+    <string name="fragment_welcome_text">I am being shown in a fragment</string>
+    <string name="the_content_below_me_is_being_rendered_in_a_fragment">The content below me is being rendered in a fragment</string>
 </resources>

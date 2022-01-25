@@ -9,13 +9,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        tools:text="The content below me is being rendered in a fragment" />
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:text="@string/the_content_below_me_is_being_rendered_in_a_fragment" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/my_fragment_container_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:background="@color/design_default_color_secondary_variant"
         android:name="com.example.androidmasterclass.fragments.module2.Module2Lesson3ExampleFragment"/>
 

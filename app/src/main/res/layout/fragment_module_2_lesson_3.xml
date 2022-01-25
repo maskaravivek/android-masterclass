@@ -10,6 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        tools:text="I am being shown in a fragment" />
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/fragment_welcome_text" />
 
 </LinearLayout>
