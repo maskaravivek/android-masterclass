@@ -85,6 +85,11 @@
             android:name=".activity.module6.Lesson1FirebaseAuth"
             android:exported="false"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+
+        <activity
+            android:name=".activity.module6.EmailPasswordSignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >

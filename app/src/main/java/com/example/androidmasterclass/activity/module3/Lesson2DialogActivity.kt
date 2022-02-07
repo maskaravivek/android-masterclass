@@ -21,7 +21,7 @@ class Lesson2DialogActivity : AppCompatActivity(){
 
     private fun addSimpleDialogAlertHandler(){
         // get reference to button
-        val btn_click_me=findViewById(R.id.dialog_button_simple)as Button
+        val btn_click_me = findViewById(R.id.dialog_button_simple) as Button
         // set on-click listener
         btn_click_me.setOnClickListener{
             AlertDialog.Builder(this)

@@ -38,4 +38,11 @@
     <string name="module_3">Module 3</string>
     <string name="module_2">Module 2</string>
     <string name="module_6_title">Module 6</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email_password_auth">Email/Password Auth</string>
+    <string name="email_password_login">Email password login</string>
+    <string name="email_password_sign_up">Email password sign up</string>
+    <string name="enter_email_id">Enter email ID</string>
+    <string name="enter_password">Enter password</string>
 </resources>
