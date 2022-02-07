@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116997606935",
+    "project_id": "android-masterclass",
+    "storage_bucket": "android-masterclass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116997606935:android:c2f3d0dbc9c271f5111652",
+        "android_client_info": {
+          "package_name": "com.example.androidmasterclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116997606935-3qcmeu72olnasv31qccas5npplo1emg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpMrHnW3zR6QDaAfo_w2Vc9PgIpGQOij4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116997606935-3qcmeu72olnasv31qccas5npplo1emg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

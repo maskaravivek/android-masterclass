@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmasterclass.activity.module2.Module2Activity
 import com.example.androidmasterclass.activity.module3.Module3Activity
+import com.example.androidmasterclass.activity.module6.Module6Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         val buttonModule3 = findViewById<Button>(R.id.module_3)
         buttonModule3.setOnClickListener {
             val intent = Intent(this, Module3Activity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonModule6 = findViewById<Button>(R.id.module_6)
+        buttonModule6.setOnClickListener {
+            val intent = Intent(this, Module6Activity::class.java)
             startActivity(intent)
         }
     }
