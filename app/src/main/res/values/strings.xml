@@ -45,4 +45,5 @@
     <string name="email_password_sign_up">Email password sign up</string>
     <string name="enter_email_id">Enter email ID</string>
     <string name="enter_password">Enter password</string>
+    <string name="firebase_ui">Firebase UI</string>
 </resources>
