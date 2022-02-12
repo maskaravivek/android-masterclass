@@ -49,4 +49,8 @@
     <string name="write_test_data">Write test data</string>
     <string name="read_test_data">Read test data</string>
     <string name="firebase_realtime_db">Firebase Realtime Database</string>
+    <string name="firebase_storage">Firebase Storage</string>
+    <string name="firebase_cloud_messaging">Firebase Cloud Messaging</string>
+    <string name="upload_in_memory_data">Upload in memory data</string>
+    <string name="download_file_from_storage">Download file from storage</string>
 </resources>

@@ -12,6 +12,8 @@ class Module6Activity : AppCompatActivity() {
         setContentView(R.layout.activity_module_6)
         startLesson1()
         startLesson2()
+        startLesson3()
+        startLesson4()
     }
 
     private fun startLesson1() {
@@ -26,6 +28,22 @@ class Module6Activity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.module_6_lesson_2)
         button.setOnClickListener {
             val intent = Intent(this, Lesson2FirebaseRealtimeDatabase::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startLesson3() {
+        val button = findViewById<Button>(R.id.module_6_lesson_3)
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson3FirebaseStorage::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startLesson4() {
+        val button = findViewById<Button>(R.id.module_6_lesson_4)
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson4FirebaseCloudMessaging::class.java)
             startActivity(intent)
         }
     }
