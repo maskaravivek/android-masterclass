@@ -53,4 +53,9 @@
     <string name="firebase_cloud_messaging">Firebase Cloud Messaging</string>
     <string name="upload_in_memory_data">Upload in memory data</string>
     <string name="download_file_from_storage">Download file from storage</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Educative</string>
+    <string name="fcm_message" translatable="true">New remote notification</string>
+    <string name="send_remote_notification">Send remote notification</string>
 </resources>
