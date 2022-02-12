@@ -1,6 +1,5 @@
 package com.example.androidmasterclass.activity.module6
 
-import android.R.attr.data
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

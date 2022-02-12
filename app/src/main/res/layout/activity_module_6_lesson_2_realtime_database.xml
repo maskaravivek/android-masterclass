@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
     android:gravity="center"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/module_6_lesson_1"
+        android:id="@+id/write_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="@string/firebase_auth"/>
+        android:text="@string/write_test_data"/>
 
     <Button
-        android:id="@+id/module_6_lesson_2"
+        android:id="@+id/read_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="@string/firebase_realtime_db"/>
+        android:text="@string/read_test_data"/>
 </LinearLayout>

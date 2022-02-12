@@ -46,4 +46,7 @@
     <string name="enter_email_id">Enter email ID</string>
     <string name="enter_password">Enter password</string>
     <string name="firebase_ui">Firebase UI</string>
+    <string name="write_test_data">Write test data</string>
+    <string name="read_test_data">Read test data</string>
+    <string name="firebase_realtime_db">Firebase Realtime Database</string>
 </resources>
