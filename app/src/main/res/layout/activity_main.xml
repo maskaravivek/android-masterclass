@@ -28,4 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="@string/module_6"/>
+
+    <Button
+        android:id="@+id/module_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Module 10"/>
 </LinearLayout>

@@ -58,4 +58,6 @@
     <string name="default_notification_channel_name" translatable="true">Educative</string>
     <string name="fcm_message" translatable="true">New remote notification</string>
     <string name="send_remote_notification">Send remote notification</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="get_cat_facts">GET Cat Facts</string>
 </resources>

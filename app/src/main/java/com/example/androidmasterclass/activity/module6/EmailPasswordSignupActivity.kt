@@ -27,12 +27,9 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
     }
 
     private fun displayButtonBasedOnAction() {
-        val extras = intent.extras
-        if (extras == null) {
-            return
-        }
+        val extras = intent.extras ?: return
 
-        val loginSignupButton = findViewById(R.id.login_signup_button) as Button
+        val loginSignupButton = findViewById<Button>(R.id.login_signup_button)
         val action = extras?.getString("action")
         if (action.equals("login")) {
             loginSignupButton.text = getString(R.string.login)
@@ -56,8 +53,8 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
     }
 
     private fun createAccount() {
-        val email = findViewById(R.id.email_id) as EditText
-        val password = findViewById(R.id.password) as EditText
+        val email = findViewById<EditText>(R.id.email_id)
+        val password = findViewById<EditText>(R.id.password)
         auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -76,8 +73,8 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
     }
 
     private fun signIn() {
-        val email = findViewById(R.id.email_id) as EditText
-        val password = findViewById(R.id.password) as EditText
+        val email = findViewById<EditText>(R.id.email_id)
+        val password = findViewById<EditText>(R.id.password)
         auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -96,7 +93,7 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        val userDetailsTv = findViewById(R.id.user_details) as TextView
+        val userDetailsTv = findViewById<TextView>(R.id.user_details)
         userDetailsTv.text = "Logged in as: ${user?.email}"
     }
 

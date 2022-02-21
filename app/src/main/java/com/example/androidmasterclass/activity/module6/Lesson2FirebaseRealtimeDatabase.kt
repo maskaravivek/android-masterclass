@@ -1,6 +1,5 @@
 package com.example.androidmasterclass.activity.module6
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -54,6 +53,16 @@ class Lesson2FirebaseRealtimeDatabase : AppCompatActivity() {
                 Toast.LENGTH_LONG
             ).show()
         }
+    }
+
+    private fun updateData(userId: String, email: String) {
+        val dataToUpdate = hashMapOf<String, Any>("email" to email)
+        database.child("users").child(userId)
+            .updateChildren(dataToUpdate)
+    }
+
+    private fun deleteData(userId: String) {
+        database.child("users").child(userId).removeValue()
     }
 
     private fun writeNewUser(userId: String, name: String, email: String) {
