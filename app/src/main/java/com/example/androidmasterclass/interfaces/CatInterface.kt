@@ -8,12 +8,10 @@ import retrofit2.http.GET
 
 
 interface CatInterface {
-
     @GET("facts/")
     fun getFacts(): Call<List<CatFact>>
 
     companion object {
-
         var BASE_URL = "https://cat-fact.herokuapp.com/"
 
         fun create(): CatInterface {
