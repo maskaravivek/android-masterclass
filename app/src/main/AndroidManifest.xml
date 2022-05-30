@@ -14,10 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass">
         <activity
-            android:name=".activity.module9.Lesson1ViewModelActivity"
+            android:name=".activity.module6.Module6Activity"
             android:exported="false" />
         <activity
-            android:name=".activity.module9.Module6Activity"
+            android:name=".activity.module6.Lesson1ViewModelActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module9.Lesson1RetrofitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.module9.Module9Activity"
             android:exported="false" />
         <activity
             android:name=".activity.module5.Lesson4FirebaseCloudMessaging"

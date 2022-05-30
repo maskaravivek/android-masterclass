@@ -17,7 +17,7 @@ class Module5Activity : AppCompatActivity() {
     }
 
     private fun startLesson1() {
-        val button = findViewById<Button>(R.id.module_6_lesson_1)
+        val button = findViewById<Button>(R.id.module_5_lesson_1)
         button.setOnClickListener {
             val intent = Intent(this, Lesson1FirebaseAuth::class.java)
             startActivity(intent)
@@ -25,7 +25,7 @@ class Module5Activity : AppCompatActivity() {
     }
 
     private fun startLesson2() {
-        val button = findViewById<Button>(R.id.module_6_lesson_2)
+        val button = findViewById<Button>(R.id.module_5_lesson_2)
         button.setOnClickListener {
             val intent = Intent(this, Lesson2FirebaseRealtimeDatabase::class.java)
             startActivity(intent)
@@ -33,7 +33,7 @@ class Module5Activity : AppCompatActivity() {
     }
 
     private fun startLesson3() {
-        val button = findViewById<Button>(R.id.module_6_lesson_3)
+        val button = findViewById<Button>(R.id.module_5_lesson_3)
         button.setOnClickListener {
             val intent = Intent(this, Lesson3FirebaseStorage::class.java)
             startActivity(intent)
@@ -41,7 +41,7 @@ class Module5Activity : AppCompatActivity() {
     }
 
     private fun startLesson4() {
-        val button = findViewById<Button>(R.id.module_6_lesson_4)
+        val button = findViewById<Button>(R.id.module_5_lesson_4)
         button.setOnClickListener {
             val intent = Intent(this, Lesson4FirebaseCloudMessaging::class.java)
             startActivity(intent)

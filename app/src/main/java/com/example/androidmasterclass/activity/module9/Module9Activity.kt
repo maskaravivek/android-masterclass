@@ -14,9 +14,9 @@ class Module9Activity : AppCompatActivity() {
     }
 
     private fun startLesson1() {
-        val button = findViewById<Button>(R.id.module_10_lesson_1)
+        val button = findViewById<Button>(R.id.module_6_lesson_1)
         button.setOnClickListener {
-            val intent = Intent(this, Lesson1ViewModelActivity::class.java)
+            val intent = Intent(this, Lesson1RetrofitActivity::class.java)
             startActivity(intent)
         }
     }

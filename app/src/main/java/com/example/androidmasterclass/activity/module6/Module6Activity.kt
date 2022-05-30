@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.androidmasterclass.R
-import com.example.androidmasterclass.activity.module9.Lesson1ViewModelActivity
 
 class Module6Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,7 @@ class Module6Activity : AppCompatActivity() {
     }
 
     private fun startLesson1() {
-        val button = findViewById<Button>(R.id.module_10_lesson_1)
+        val button = findViewById<Button>(R.id.module_6_lesson_1)
         button.setOnClickListener {
             val intent = Intent(this, Lesson1ViewModelActivity::class.java)
             startActivity(intent)

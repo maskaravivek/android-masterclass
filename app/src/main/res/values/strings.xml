@@ -61,4 +61,5 @@
     <string name="retrofit">Retrofit</string>
     <string name="get_cat_facts">GET Cat Facts</string>
     <string name="module_9">Module 9</string>
+    <string name="view_models">View Models</string>
 </resources>
