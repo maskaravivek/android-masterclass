@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module3
+package com.example.androidmasterclass.activity.module2
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
@@ -24,7 +24,7 @@ class ImagesActivity : AppCompatActivity() {
         if (extras == null) {
             return
         }
-        val action = extras?.getString("action")
+        val action = extras.getString("action")
         if (action.equals("simpleImage")) {
             showSimpleImage()
         } else if (action.equals("bitmapImage")) {

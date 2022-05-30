@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module2
+package com.example.androidmasterclass.activity.module1
 
 import android.app.Activity
 import android.os.Bundle

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.module3.MenuActivity">
+    tools:context=".activity.module2.MenuActivity">
 
     <ImageButton
         android:id="@+id/image_button"

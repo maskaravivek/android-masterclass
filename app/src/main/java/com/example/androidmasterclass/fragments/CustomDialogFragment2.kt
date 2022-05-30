@@ -19,12 +19,12 @@ class CustomDialogFragment2 : DialogFragment() {
             builder.setView(inflater.inflate(R.layout.dialog_custom_login_fragment, null))
                 // Add action buttons
                 .setPositiveButton("Sign in",
-                    DialogInterface.OnClickListener { dialog, id ->
+                    DialogInterface.OnClickListener { _, _ ->
                         // sign in the user ...
                     })
                 .setNegativeButton("Cancel",
-                    DialogInterface.OnClickListener { dialog, id ->
-                        getDialog()?.cancel()
+                    DialogInterface.OnClickListener { _, _ ->
+                        dialog?.cancel()
                     })
             builder.create()
         } ?: throw IllegalStateException("Activity cannot be null")

@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module6
+package com.example.androidmasterclass.activity.module5
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.core.app.NotificationCompat
-import com.example.androidmasterclass.MainActivity
 import com.example.androidmasterclass.R
 
 class Lesson4FirebaseCloudMessaging : AppCompatActivity() {

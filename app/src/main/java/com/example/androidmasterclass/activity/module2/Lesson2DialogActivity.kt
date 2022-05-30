@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module3;
+package com.example.androidmasterclass.activity.module2;
 
 import android.os.Bundle
 import android.widget.Button

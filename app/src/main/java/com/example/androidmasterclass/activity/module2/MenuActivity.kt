@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module3
+package com.example.androidmasterclass.activity.module2
 
 import android.os.Bundle
 import android.view.*
@@ -20,7 +20,7 @@ class MenuActivity : AppCompatActivity() {
         if (extras == null) {
             return
         }
-        val action = extras?.getString("action")
+        val action = extras.getString("action")
         var imageButton = findViewById(R.id.image_button) as ImageButton
         if (action.equals("popupMenu")) {
             imageButton.visibility = View.VISIBLE

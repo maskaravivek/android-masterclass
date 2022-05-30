@@ -1,6 +1,5 @@
-package com.example.androidmasterclass.activity.module10
+package com.example.androidmasterclass.activity.module9
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -11,7 +10,6 @@ import com.example.androidmasterclass.models.CatFact
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
 
 
 class Lesson1RetrofitActivity : AppCompatActivity() {

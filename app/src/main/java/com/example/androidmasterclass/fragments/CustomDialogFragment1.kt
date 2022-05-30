@@ -11,14 +11,14 @@ class CustomDialogFragment1 : DialogFragment() {
             // Use the Builder class for convenient dialog construction
             val builder = AlertDialog.Builder(it)
             builder.setMessage("Are you enjoying this course?")
-                .setPositiveButton("Yes",
-                    { dialog, id ->
-                        // Positive action handler
-                    })
-                .setNegativeButton("No",
-                    { dialog, id ->
-                        // Negative action handler
-                    })
+                .setPositiveButton("Yes"
+                ) { _, _ ->
+                    // Positive action handler
+                }
+                .setNegativeButton("No"
+                ) { _, _ ->
+                    // Negative action handler
+                }
             // Create the AlertDialog object and return it
             builder.create()
         } ?: throw IllegalStateException("Activity cannot be null")

@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module6
+package com.example.androidmasterclass.activity.module5
 
 import android.content.Intent
 import android.os.Bundle
@@ -68,7 +68,6 @@ class Lesson1FirebaseAuth : AppCompatActivity() {
     }
 
     private fun onSignInResult(result: FirebaseAuthUIAuthenticationResult) {
-        val response = result.idpResponse
         if (result.resultCode == RESULT_OK) {
             val user = FirebaseAuth.getInstance().currentUser
             Toast.makeText(

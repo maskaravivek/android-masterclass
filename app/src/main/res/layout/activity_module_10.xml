@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.module10.Module10Activity">
+    tools:context=".activity.module9.Module9Activity">
 
     <Button
         android:id="@+id/module_10_lesson_1"

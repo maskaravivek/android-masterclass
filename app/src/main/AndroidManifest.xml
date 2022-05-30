@@ -14,96 +14,96 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass">
         <activity
-            android:name=".activity.module10.Lesson1RetrofitActivity"
+            android:name=".activity.module9.Lesson1RetrofitActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.module10.Module10Activity"
+            android:name=".activity.module9.Module9Activity"
             android:exported="false" />
         <activity
-            android:name=".activity.module6.Lesson4FirebaseCloudMessaging"
+            android:name=".activity.module5.Lesson4FirebaseCloudMessaging"
             android:exported="false" />
         <activity
-            android:name=".activity.module6.Lesson3FirebaseStorage"
+            android:name=".activity.module5.Lesson3FirebaseStorage"
             android:exported="false" />
         <activity
-            android:name=".activity.module2.Module2Activity"
+            android:name=".activity.module1.Module1Activity"
             android:exported="false" />
         <activity
-            android:name=".activity.module2.Lesson3ExampleActivityWithFragment"
+            android:name=".activity.module1.Lesson3ExampleActivityWithFragment"
             android:exported="false"
             android:label="@string/title_activity_example_with_fragment" />
         <activity
-            android:name=".activity.module2.Lesson4ActivityWithCustomView"
+            android:name=".activity.module1.Lesson4ActivityWithCustomView"
             android:exported="false"
             android:label="@string/title_activity_example_with_fragment"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson2ExampleActivity"
+            android:name=".activity.module1.Lesson2ExampleActivity"
             android:exported="false"
             android:label="@string/title_activity_example"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson4ExampleActivityWithInfoView"
+            android:name=".activity.module1.Lesson4ExampleActivityWithInfoView"
             android:exported="false"
             android:label="@string/title_activity_example_custom_view"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.Lesson6WebviewActivity"
+            android:name=".activity.module2.Lesson6WebviewActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.SimpleWebviewDemoActivity"
+            android:name=".activity.module2.SimpleWebviewDemoActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.Lesson4MenuActivity"
+            android:name=".activity.module2.Lesson4MenuActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.Lesson3ImagesActivity"
+            android:name=".activity.module2.Lesson3ImagesActivity"
             android:exported="false"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.ImagesActivity"
+            android:name=".activity.module2.ImagesActivity"
             android:exported="false"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.MenuActivity"
+            android:name=".activity.module2.MenuActivity"
             android:exported="false"
             android:label="Menus" />
         <activity
-            android:name=".activity.module3.Lesson1BottomNavigationActivity"
+            android:name=".activity.module2.Lesson1BottomNavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.RecyclerViewActivity"
+            android:name=".activity.module2.RecyclerViewActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module3.Lesson5RecyclerViewActivity"
+            android:name=".activity.module2.Lesson5RecyclerViewActivity"
             android:exported="false"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module6.Module6Activity"
+            android:name=".activity.module5.Module5Activity"
             android:exported="false"
-            android:label="@string/module_6_title"
+            android:label="@string/module_5_title"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module6.Lesson1FirebaseAuth"
-            android:exported="false"
-            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
-        <activity
-            android:name=".activity.module6.EmailPasswordSignupActivity"
+            android:name=".activity.module5.Lesson1FirebaseAuth"
             android:exported="false"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module6.Lesson2FirebaseRealtimeDatabase"
+            android:name=".activity.module5.EmailPasswordSignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
+        <activity
+            android:name=".activity.module5.Lesson2FirebaseRealtimeDatabase"
             android:exported="false"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
@@ -116,10 +116,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.module3.Module3Activity"
+            android:name=".activity.module2.Module2Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module3.Lesson2DialogActivity"
+            android:name=".activity.module2.Lesson2DialogActivity"
             android:exported="true" />
 
         <service

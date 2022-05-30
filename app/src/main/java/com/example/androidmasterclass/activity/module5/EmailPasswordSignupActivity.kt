@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module6
+package com.example.androidmasterclass.activity.module5
 
 import android.os.Bundle
 import android.util.Log
@@ -30,7 +30,7 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
         val extras = intent.extras ?: return
 
         val loginSignupButton = findViewById<Button>(R.id.login_signup_button)
-        val action = extras?.getString("action")
+        val action = extras.getString("action")
         if (action.equals("login")) {
             loginSignupButton.text = getString(R.string.login)
             loginSignupButton.setOnClickListener {

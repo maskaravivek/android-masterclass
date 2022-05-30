@@ -34,10 +34,10 @@
     <string name="fragment_welcome_text">I am being shown in a fragment</string>
     <string name="the_content_below_me_is_being_rendered_in_a_fragment">The content below me is being rendered in a fragment</string>
     <string name="firebase_auth">Firebase Auth</string>
-    <string name="module_6">Module 6</string>
-    <string name="module_3">Module 3</string>
+    <string name="module_5">Module 5</string>
     <string name="module_2">Module 2</string>
-    <string name="module_6_title">Module 6</string>
+    <string name="module_1">Module 1</string>
+    <string name="module_5_title">Module 5</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign up</string>
     <string name="email_password_auth">Email/Password Auth</string>
@@ -60,4 +60,5 @@
     <string name="send_remote_notification">Send remote notification</string>
     <string name="retrofit">Retrofit</string>
     <string name="get_cat_facts">GET Cat Facts</string>
+    <string name="module_9">Module 9</string>
 </resources>

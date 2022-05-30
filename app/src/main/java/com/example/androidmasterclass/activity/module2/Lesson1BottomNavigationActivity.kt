@@ -1,9 +1,8 @@
-package com.example.androidmasterclass.activity.module3
+package com.example.androidmasterclass.activity.module2
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.example.androidmasterclass.R

@@ -1,10 +1,8 @@
-package com.example.androidmasterclass.activity.module6
+package com.example.androidmasterclass.activity.module5
 
 import android.graphics.Bitmap
 import android.graphics.drawable.VectorDrawable
-import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -72,7 +70,6 @@ class Lesson3FirebaseStorage : AppCompatActivity() {
         val localFile = File.createTempFile("images", "jpg")
 
         ref.getFile(localFile).addOnSuccessListener {
-            val downloadUri = it.task.result
             Toast.makeText(
                 this, "Download successful.",
                 Toast.LENGTH_LONG
