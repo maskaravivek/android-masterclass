@@ -9,7 +9,7 @@ class Lesson2ExampleActivity : Activity() {
     private var count = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_2_lesson_2)
+        setContentView(R.layout.activity_module_1_lesson_2)
     }
 
     override fun onResume() {

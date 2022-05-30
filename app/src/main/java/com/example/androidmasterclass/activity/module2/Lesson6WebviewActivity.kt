@@ -9,7 +9,7 @@ import com.example.androidmasterclass.R
 class Lesson6WebviewActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson_6_webview)
+        setContentView(R.layout.activity_module_2_lesson_6_webview)
         addOpenUrlInWebviewHandler()
         addLoadDataInWebviewHandler()
         loadUrlInDarkModeHandler()

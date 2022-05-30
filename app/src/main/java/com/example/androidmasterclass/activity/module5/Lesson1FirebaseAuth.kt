@@ -23,7 +23,7 @@ class Lesson1FirebaseAuth : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Fresco.initialize(this)
-        setContentView(R.layout.activity_module_6_lesson_1_firebase_auth)
+        setContentView(R.layout.activity_module_5_lesson_1_firebase_auth)
         startEmailPasswordAuthForSignUp()
         startEmailPasswordAuthForLogin()
         startFirebaseUIActivity()

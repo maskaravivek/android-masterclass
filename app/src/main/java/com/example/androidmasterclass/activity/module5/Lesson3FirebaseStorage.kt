@@ -19,7 +19,7 @@ class Lesson3FirebaseStorage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_6_lesson3_firebase_storage)
+        setContentView(R.layout.activity_module_5_lesson3_firebase_storage)
         storage = FirebaseStorage.getInstance()
         uploadFromInMemory()
         downloadFileFromStorage()

@@ -9,7 +9,7 @@ import com.example.androidmasterclass.R
 class Module1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_2)
+        setContentView(R.layout.activity_module_1)
         startLesson2()
         startLesson3()
         startLesson4()

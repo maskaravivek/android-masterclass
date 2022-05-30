@@ -9,7 +9,7 @@ import com.example.androidmasterclass.R
 class Lesson3ImagesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson_3_images)
+        setContentView(R.layout.activity_module_2_lesson_3_images)
         showSimpleImageEventHandler()
         showImageFromUrlEventHandler()
         showImageFromUrlUsingFrescoEventHandler()

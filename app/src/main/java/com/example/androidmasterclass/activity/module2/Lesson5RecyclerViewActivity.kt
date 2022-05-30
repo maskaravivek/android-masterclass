@@ -9,7 +9,7 @@ import com.example.androidmasterclass.R
 class Lesson5RecyclerViewActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson_5_recycler_view)
+        setContentView(R.layout.activity_module_2_lesson_5_recycler_view)
         showSimpleRecyclerViewHandler()
     }
 

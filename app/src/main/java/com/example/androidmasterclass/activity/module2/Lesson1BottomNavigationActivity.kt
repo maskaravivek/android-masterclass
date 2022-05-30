@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Lesson1BottomNavigationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_module_3_lesson1_bottom_nav_bar)
+            setContentView(R.layout.activity_module_2_lesson1_bottom_nav_bar)
         //show default tab
         showBottomTabFragment("Favorites")
         attachEventHandlers()

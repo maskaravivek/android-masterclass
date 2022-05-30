@@ -13,6 +13,6 @@ class Module2Lesson3ExampleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_module_2_lesson_3, container, false)
+        return inflater.inflate(R.layout.fragment_module_1_lesson_3, container, false)
     }
 }

@@ -12,7 +12,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class Lesson1RetrofitActivity : AppCompatActivity() {
+class Lesson1ViewModelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

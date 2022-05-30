@@ -12,7 +12,7 @@ import com.example.androidmasterclass.fragments.CustomDialogFragment2
 class Lesson2DialogActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson_2_dialog)
+        setContentView(R.layout.activity_module_2_lesson_2_dialog)
         addSimpleDialogAlertHandler()
         addActionDialogAlertHandler()
         addCustomDialogFragment1Handler()

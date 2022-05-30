@@ -9,7 +9,7 @@ import com.example.androidmasterclass.R
 class Lesson4MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson_4_menu)
+        setContentView(R.layout.activity_module_2_lesson_4_menu)
         optionsMenuEventHandler()
         popupMenuEventHandler()
         contextMenuEventHandler()
