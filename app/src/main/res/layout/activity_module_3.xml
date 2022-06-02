@@ -7,12 +7,12 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity.module9.Module9Activity">
+    tools:context=".activity.module6.Module6Activity">
 
     <Button
-        android:id="@+id/module_6_lesson_2"
+        android:id="@+id/module_3_lesson_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="@string/retrofit"/>
+        android:text="@string/intents"/>
 </LinearLayout>

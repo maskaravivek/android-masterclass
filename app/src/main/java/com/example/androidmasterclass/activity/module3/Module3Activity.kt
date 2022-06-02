@@ -1,4 +1,4 @@
-package com.example.androidmasterclass.activity.module9
+package com.example.androidmasterclass.activity.module3
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,17 +6,17 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.androidmasterclass.R
 
-class Module9Activity : AppCompatActivity() {
+class Module3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_9)
+        setContentView(R.layout.activity_module_3)
         startLesson1()
     }
 
     private fun startLesson1() {
-        val button = findViewById<Button>(R.id.module_6_lesson_2)
+        val button = findViewById<Button>(R.id.module_3_lesson_1)
         button.setOnClickListener {
-            val intent = Intent(this, Lesson1RetrofitActivity::class.java)
+            val intent = Intent(this, Lesson1ExampleActivity::class.java)
             startActivity(intent)
         }
     }

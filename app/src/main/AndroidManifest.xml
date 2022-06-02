@@ -14,10 +14,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass">
         <activity
+            android:name=".activity.module3.ExampleSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.module3.Lesson1ExampleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module3.ExampleReceiveUrlActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.module3.Module3Activity"
+            android:exported="false" />
+
+        <activity
             android:name=".activity.module6.Module6Activity"
             android:exported="false" />
         <activity
-            android:name=".activity.module6.Lesson1ViewModelActivity"
+            android:name=".activity.module6.Lesson1ExampleLifecycleOwnerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module6.Lesson2ViewModelActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module6.Lesson3LiveDataActivity"
             android:exported="false" />
 
         <activity

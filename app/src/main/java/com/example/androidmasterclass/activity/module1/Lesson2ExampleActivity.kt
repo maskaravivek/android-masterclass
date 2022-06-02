@@ -22,5 +22,4 @@ class Lesson2ExampleActivity : Activity() {
         val tvCounter = findViewById(R.id.tv_counter) as TextView
         tvCounter.setText(count.toString())
     }
-
 }

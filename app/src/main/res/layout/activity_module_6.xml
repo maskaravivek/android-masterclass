@@ -14,5 +14,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:text="@string/lifecycle_aware_components"/>
+
+    <Button
+        android:id="@+id/module_6_lesson_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         android:text="@string/view_models"/>
+
+    <Button
+        android:id="@+id/module_6_lesson_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/live_data"/>
 </LinearLayout>

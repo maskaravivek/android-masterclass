@@ -23,11 +23,25 @@
         android:text="@string/module_2"/>
 
     <Button
+        android:id="@+id/module_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/module_3"/>
+
+    <Button
         android:id="@+id/module_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="@string/module_5"/>
+
+    <Button
+        android:id="@+id/module_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Module 6"/>
 
     <Button
         android:id="@+id/module_9"

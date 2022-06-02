@@ -62,4 +62,16 @@
     <string name="get_cat_facts">GET Cat Facts</string>
     <string name="module_9">Module 9</string>
     <string name="view_models">View Models</string>
+    <string name="increment">Increment</string>
+    <string name="decrement">Decrement</string>
+    <string name="live_data">Live Data</string>
+    <string name="lifecycle_aware_components">Lifecycle aware components</string>
+    <string name="second_activity">Second activity!</string>
+    <string name="intent_examples">Intent examples</string>
+    <string name="launch_second_activity">Launch second activity</string>
+    <string name="intents">Intents</string>
+    <string name="module_3">Module 3</string>
+    <string name="share_content">Share content</string>
+    <string name="received_url">Received URL</string>
+    <string name="receive_content">Receive content</string>
 </resources>

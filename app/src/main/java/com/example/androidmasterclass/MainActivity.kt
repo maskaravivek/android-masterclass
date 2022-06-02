@@ -4,10 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.androidmasterclass.activity.module9.Module6Activity
 import com.example.androidmasterclass.activity.module1.Module1Activity
 import com.example.androidmasterclass.activity.module2.Module2Activity
+import com.example.androidmasterclass.activity.module3.Module3Activity
 import com.example.androidmasterclass.activity.module5.Module5Activity
+import com.example.androidmasterclass.activity.module6.Module6Activity
+import com.example.androidmasterclass.activity.module9.Module9Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,38 +17,56 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         startModule1()
         startModule2()
+        startModule3()
         startModule5()
+        startModule6()
         startModule9()
     }
 
     private fun startModule1() {
-        val buttonModule2 = findViewById<Button>(R.id.module_1)
-        buttonModule2.setOnClickListener {
+        val buttonModule1 = findViewById<Button>(R.id.module_1)
+        buttonModule1.setOnClickListener {
             val intent = Intent(this, Module1Activity::class.java)
             startActivity(intent)
         }
     }
 
     private fun startModule2() {
-        val buttonModule3 = findViewById<Button>(R.id.module_2)
-        buttonModule3.setOnClickListener {
+        val buttonModule2 = findViewById<Button>(R.id.module_2)
+        buttonModule2.setOnClickListener {
             val intent = Intent(this, Module2Activity::class.java)
             startActivity(intent)
         }
     }
 
+    private fun startModule3() {
+        val buttonModule3 = findViewById<Button>(R.id.module_3)
+        buttonModule3.setOnClickListener {
+            val intent = Intent(this, Module3Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
     private fun startModule5() {
-        val buttonModule6 = findViewById<Button>(R.id.module_5)
-        buttonModule6.setOnClickListener {
+        val buttonModule5 = findViewById<Button>(R.id.module_5)
+        buttonModule5.setOnClickListener {
             val intent = Intent(this, Module5Activity::class.java)
             startActivity(intent)
         }
     }
 
-    private fun startModule9() {
-        val buttonModule10 = findViewById<Button>(R.id.module_9)
-        buttonModule10.setOnClickListener {
+    private fun startModule6() {
+        val buttonModule6 = findViewById<Button>(R.id.module_6)
+        buttonModule6.setOnClickListener {
             val intent = Intent(this, Module6Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startModule9() {
+        val buttonModule9 = findViewById<Button>(R.id.module_9)
+        buttonModule9.setOnClickListener {
+            val intent = Intent(this, Module9Activity::class.java)
             startActivity(intent)
         }
     }
