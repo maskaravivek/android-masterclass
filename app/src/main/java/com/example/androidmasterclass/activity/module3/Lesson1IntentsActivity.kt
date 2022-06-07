@@ -7,11 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmasterclass.R
 
 
-class Lesson1ExampleActivity : AppCompatActivity() {
+class Lesson1IntentsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_3_lesson1_activity)
+        setContentView(R.layout.activity_module_3_lesson1_intents)
         attachEvents()
     }
 

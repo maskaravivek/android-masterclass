@@ -15,4 +15,25 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="@string/intents"/>
+
+    <Button
+        android:id="@+id/module_3_lesson_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/broadcast_receiver"/>
+
+    <Button
+        android:id="@+id/module_3_lesson_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/processes_and_threads"/>
+
+    <Button
+        android:id="@+id/module_3_lesson_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/service_and_workers"/>
 </LinearLayout>

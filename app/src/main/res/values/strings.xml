@@ -74,4 +74,9 @@
     <string name="share_content">Share content</string>
     <string name="received_url">Received URL</string>
     <string name="receive_content">Receive content</string>
+    <string name="send_broadcast">Send broadcast</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="send_local_broadcast">Send local broadcast</string>
+    <string name="processes_and_threads">Processes and threads</string>
+    <string name="service_and_workers">Service and Workers</string>
 </resources>

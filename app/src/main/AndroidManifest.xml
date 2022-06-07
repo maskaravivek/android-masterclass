@@ -17,7 +17,19 @@
             android:name=".activity.module3.ExampleSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.module3.Lesson1ExampleActivity"
+            android:name=".activity.module3.Lesson1IntentsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module3.Lesson2BroadcastReceiverActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module3.Lesson3ProcessesAndThreadsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module3.Lesson4ServiceAndWorkersActivity"
             android:exported="false" />
 
         <activity
@@ -165,6 +177,20 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <service
+            android:name=".service.MyCustomService"
+            android:exported="false">
+        </service>
+
+        <receiver
+            android:name=".receivers.CustomBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.sample.NEW_VIDEO" />
+            </intent-filter>
+        </receiver>
     </application>
+
 
 </manifest>
