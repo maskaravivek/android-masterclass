@@ -30,6 +30,13 @@
         android:text="@string/module_3"/>
 
     <Button
+        android:id="@+id/module_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Module 4"/>
+
+    <Button
         android:id="@+id/module_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

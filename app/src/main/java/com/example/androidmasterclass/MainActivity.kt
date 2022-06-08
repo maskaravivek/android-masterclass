@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmasterclass.activity.module1.Module1Activity
 import com.example.androidmasterclass.activity.module2.Module2Activity
 import com.example.androidmasterclass.activity.module3.Module3Activity
+import com.example.androidmasterclass.activity.module4.Module4Activity
 import com.example.androidmasterclass.activity.module5.Module5Activity
 import com.example.androidmasterclass.activity.module6.Module6Activity
 import com.example.androidmasterclass.activity.module9.Module9Activity
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         startModule1()
         startModule2()
         startModule3()
+        startModule4()
         startModule5()
         startModule6()
         startModule9()
@@ -43,6 +45,14 @@ class MainActivity : AppCompatActivity() {
         val buttonModule3 = findViewById<Button>(R.id.module_3)
         buttonModule3.setOnClickListener {
             val intent = Intent(this, Module3Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startModule4() {
+        val buttonModule4 = findViewById<Button>(R.id.module_4)
+        buttonModule4.setOnClickListener {
+            val intent = Intent(this, Module4Activity::class.java)
             startActivity(intent)
         }
     }

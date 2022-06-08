@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidmasterclass">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass">
+        <activity
+            android:name=".activity.module4.Module4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.module4.Lesson3RuntimePermissionsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.module4.Lesson4UserLocationActivity"
+            android:exported="false" />
+
         <activity
             android:name=".activity.module3.ExampleSecondActivity"
             android:exported="false" />

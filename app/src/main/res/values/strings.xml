@@ -79,4 +79,6 @@
     <string name="send_local_broadcast">Send local broadcast</string>
     <string name="processes_and_threads">Processes and threads</string>
     <string name="service_and_workers">Service and Workers</string>
+    <string name="runtime_permissions">Runtime permissions</string>
+    <string name="fetch_user_location">User location</string>
 </resources>
