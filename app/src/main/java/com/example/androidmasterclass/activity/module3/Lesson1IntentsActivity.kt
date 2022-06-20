@@ -1,10 +1,12 @@
 package com.example.androidmasterclass.activity.module3
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidmasterclass.R
+import java.io.File
 
 
 class Lesson1IntentsActivity : AppCompatActivity() {
@@ -50,5 +52,12 @@ class Lesson1IntentsActivity : AppCompatActivity() {
             shareIntent.type = "text/plain"
             startActivity(shareIntent)
         }
+    }
+
+    private fun exampleIntent() {
+        val intent = Intent()
+        intent.action = Intent.ACTION_SEND
+        intent.data = Uri.fromFile(File("<file_path>"))
+        startActivity(intent)
     }
 }

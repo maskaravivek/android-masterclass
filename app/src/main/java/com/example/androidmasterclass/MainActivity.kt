@@ -10,6 +10,8 @@ import com.example.androidmasterclass.activity.module3.Module3Activity
 import com.example.androidmasterclass.activity.module4.Module4Activity
 import com.example.androidmasterclass.activity.module5.Module5Activity
 import com.example.androidmasterclass.activity.module6.Module6Activity
+import com.example.androidmasterclass.activity.module7.Module7Activity
+import com.example.androidmasterclass.activity.module8.Module8Activity
 import com.example.androidmasterclass.activity.module9.Module9Activity
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         startModule4()
         startModule5()
         startModule6()
+        startModule7()
+        startModule8()
         startModule9()
     }
 
@@ -69,6 +73,22 @@ class MainActivity : AppCompatActivity() {
         val buttonModule6 = findViewById<Button>(R.id.module_6)
         buttonModule6.setOnClickListener {
             val intent = Intent(this, Module6Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startModule7() {
+        val buttonModule6 = findViewById<Button>(R.id.module_7)
+        buttonModule6.setOnClickListener {
+            val intent = Intent(this, Module7Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startModule8() {
+        val buttonModule6 = findViewById<Button>(R.id.module_8)
+        buttonModule6.setOnClickListener {
+            val intent = Intent(this, Module8Activity::class.java)
             startActivity(intent)
         }
     }

@@ -19,7 +19,6 @@ class Lesson2FirebaseRealtimeDatabase : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Fresco.initialize(this)
         setContentView(R.layout.activity_module_5_lesson_2_realtime_database)
         database = Firebase.database.reference
         writeTestData()

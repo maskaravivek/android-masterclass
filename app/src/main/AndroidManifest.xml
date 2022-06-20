@@ -15,35 +15,79 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMasterclass">
+
+        <activity
+            android:name=".activity.module8.Module8Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.module8.Lesson1RoomPersistenceActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module8.Lesson2RoomModelsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module8.Lesson3RoomDaoActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module8.Lesson4RoomRepositoryActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module8.Lesson5RoomDBAndMigrationActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module7.Module7Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.module7.Lesson1WorkManagerActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module7.Lesson2CameraXActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module7.Lesson3NavigationActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.module7.Lesson4LazyLoadingActivity"
+            android:exported="true" />
+
         <activity
             android:name=".activity.module4.Module4Activity"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".activity.module4.Lesson3RuntimePermissionsActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module4.Lesson4UserLocationActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module3.ExampleSecondActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module3.Lesson1IntentsActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module3.Lesson2BroadcastReceiverActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module3.Lesson3ProcessesAndThreadsActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module3.Lesson4ServiceAndWorkersActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module3.ExampleReceiveUrlActivity"
@@ -57,115 +101,115 @@
 
         <activity
             android:name=".activity.module3.Module3Activity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module6.Module6Activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module6.Lesson1ExampleLifecycleOwnerActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module6.Lesson2ViewModelActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module6.Lesson3LiveDataActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".activity.module9.Lesson1RetrofitActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module9.Module9Activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module5.Lesson4FirebaseCloudMessaging"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module5.Lesson3FirebaseStorage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module1.Module1Activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.module1.Lesson3ExampleActivityWithFragment"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_example_with_fragment" />
         <activity
             android:name=".activity.module1.Lesson4ActivityWithCustomView"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_example_with_fragment"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module1.Lesson2ExampleActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_example"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module1.Lesson4ExampleActivityWithInfoView"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_example_custom_view"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.Lesson6WebviewActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.SimpleWebviewDemoActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.Lesson4MenuActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.Lesson3ImagesActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.ImagesActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.MenuActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="Menus" />
         <activity
             android:name=".activity.module2.Lesson1BottomNavigationActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.RecyclerViewActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module2.Lesson5RecyclerViewActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module5.Module5Activity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/module_5_title"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module5.Lesson1FirebaseAuth"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module5.EmailPasswordSignupActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".activity.module5.Lesson2FirebaseRealtimeDatabase"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
             android:name=".MainActivity"
@@ -185,7 +229,7 @@
 
         <service
             android:name=".service.MyFirebaseMessagingService"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -193,7 +237,7 @@
 
         <service
             android:name=".service.MyCustomService"
-            android:exported="false">
+            android:exported="true">
         </service>
 
         <receiver
