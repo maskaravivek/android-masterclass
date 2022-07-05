@@ -1,8 +1,10 @@
 package com.example.androidmasterclass.worker
 
 import android.content.Context
+import androidx.work.Data
 import androidx.work.Worker
 import androidx.work.WorkerParameters
+import androidx.work.workDataOf
 import java.util.*
 
 class GenerateRandomNumberWorker(appContext: Context, workerParams: WorkerParameters) :
@@ -12,11 +14,10 @@ class GenerateRandomNumberWorker(appContext: Context, workerParams: WorkerParame
         val nextNum = r.nextInt(1100)
         return when {
             nextNum <= 750 -> {
-                Result.success()
+                val output: Data = workDataOf("randomNumber" to nextNum)
+                Result.success(output)
             }
-            nextNum <= 1000 -> {
-                Result.retry()
-            }
+
             else -> {
                 Result.failure()
             }

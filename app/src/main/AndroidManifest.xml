@@ -67,6 +67,10 @@
             android:exported="true" />
 
         <activity
+            android:name=".activity.module4.Lesson2DeclaringManifestPermissionsActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".activity.module4.Lesson4UserLocationActivity"
             android:exported="true" />
 

@@ -81,4 +81,5 @@
     <string name="service_and_workers">Service and Workers</string>
     <string name="runtime_permissions">Runtime permissions</string>
     <string name="fetch_user_location">User location</string>
+    <string name="manifest_permissions">Manifest permissions</string>
 </resources>

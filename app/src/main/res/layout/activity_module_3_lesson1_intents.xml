@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="24sp"
         android:text="@string/launch_second_activity" />
 
     <Button
@@ -18,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="24sp"
         android:text="@string/share_content" />
 
     <Button
@@ -25,5 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="24sp"
         android:text="@string/receive_content" />
 </LinearLayout>

@@ -10,8 +10,17 @@ class Module4Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_module_4)
+        startLesson2()
         startLesson3()
         startLesson4()
+    }
+
+    private fun startLesson2() {
+        val button = findViewById<Button>(R.id.module_4_lesson_2)
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson2DeclaringManifestPermissionsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun startLesson3() {

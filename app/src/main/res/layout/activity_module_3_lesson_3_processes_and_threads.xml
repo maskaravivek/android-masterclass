@@ -11,7 +11,7 @@
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:text="Random Number:"/>
 
     <TextView
@@ -19,7 +19,23 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_width="match_parent"
-        android:textSize="20sp"
+        android:textSize="28sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="Time taken:"/>
+
+    <TextView
+        android:id="@+id/time_taken"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="28sp"
         android:layout_height="wrap_content" />
 
     <Button
@@ -27,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="24sp"
         android:text="Generate random number on BG thread" />
 
     <Button
@@ -34,5 +51,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="24sp"
         android:text="Generate random number on UI thread" />
 </LinearLayout>
