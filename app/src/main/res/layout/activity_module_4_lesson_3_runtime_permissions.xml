@@ -7,17 +7,19 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/read_external_storage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:text="Write external storage" />
-
-    <Button
         android:id="@+id/write_external_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:textSize="26sp"
+        android:text="Write external storage" />
+
+    <Button
+        android:id="@+id/read_external_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="26sp"
         android:text="Read external storage" />
 
 </LinearLayout>

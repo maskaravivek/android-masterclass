@@ -57,8 +57,7 @@ class Lesson1FirebaseAuth : AppCompatActivity() {
     private fun createSignInIntent() {
         val providers = arrayListOf(
             AuthUI.IdpConfig.EmailBuilder().build(),
-            AuthUI.IdpConfig.PhoneBuilder().build(),
-            AuthUI.IdpConfig.GoogleBuilder().build())
+            AuthUI.IdpConfig.PhoneBuilder().build())
 
         val signInIntent = AuthUI.getInstance()
             .createSignInIntentBuilder()
