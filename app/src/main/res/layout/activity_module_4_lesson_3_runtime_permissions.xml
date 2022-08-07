@@ -6,20 +6,46 @@
     android:layout_centerInParent="true"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WRITE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="32sp"/>
+    <EditText
+        android:id="@+id/write_text_to_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Enter some text here"
+        android:minLines="3"/>
+
     <Button
         android:id="@+id/write_external_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:textSize="26sp"
-        android:text="Write external storage" />
+        android:text="Write to file" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="READ"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="32sp"/>
+    <TextView
+        android:id="@+id/read_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/read_external_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:textSize="26sp"
-        android:text="Read external storage" />
+        android:text="Read from file" />
 
 </LinearLayout>

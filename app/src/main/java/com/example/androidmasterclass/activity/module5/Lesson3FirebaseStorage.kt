@@ -1,8 +1,11 @@
 package com.example.androidmasterclass.activity.module5
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.drawable.VectorDrawable
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -11,7 +14,6 @@ import androidx.core.graphics.drawable.toBitmap
 import com.example.androidmasterclass.R
 import com.google.firebase.storage.FirebaseStorage
 import java.io.ByteArrayOutputStream
-import java.io.File
 
 class Lesson3FirebaseStorage : AppCompatActivity() {
 
@@ -21,21 +23,43 @@ class Lesson3FirebaseStorage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_module_5_lesson3_firebase_storage)
         storage = FirebaseStorage.getInstance()
-        uploadFromInMemory()
-        downloadFileFromStorage()
+        captureImage()
+        uploadImage()
     }
 
-    private fun uploadFromInMemory() {
-        val button = findViewById<Button>(R.id.upload_from_in_memory)
-        button.setOnClickListener {
-            uploadFromDataInMemory()
+    private val REQUEST_IMAGE_CAPTURE = 1
+
+    private fun dispatchTakePictureIntent() {
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        try {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+        } catch (e: ActivityNotFoundException) {
+            // display error state to the user
         }
     }
 
-    private fun downloadFileFromStorage() {
-        val button = findViewById<Button>(R.id.download_file)
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+            val imageView = findViewById<ImageView>(R.id.image_view)
+            imageView.setImageBitmap(imageBitmap)
+            val button = findViewById<Button>(R.id.upload_from_in_memory)
+            button.isEnabled = true
+        }
+    }
+
+    private fun captureImage() {
+        val button = findViewById<Button>(R.id.capture_image)
         button.setOnClickListener {
-            downloadFile()
+            dispatchTakePictureIntent()
+        }
+    }
+
+    private fun uploadImage() {
+        val button = findViewById<Button>(R.id.upload_from_in_memory)
+        button.setOnClickListener {
+            uploadFromDataInMemory()
         }
     }
 
@@ -44,7 +68,7 @@ class Lesson3FirebaseStorage : AppCompatActivity() {
         val appIconRef = storageRef.child("app_icon.jpg")
 
         val imageView = findViewById<ImageView>(R.id.image_view)
-        val bitmap = (imageView.drawable as VectorDrawable).toBitmap()
+        val bitmap = (imageView.drawable as BitmapDrawable).toBitmap()
         val baos = ByteArrayOutputStream()
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
         val data = baos.toByteArray()
@@ -58,25 +82,6 @@ class Lesson3FirebaseStorage : AppCompatActivity() {
         }.addOnSuccessListener {
             Toast.makeText(
                 this, "Upload successful",
-                Toast.LENGTH_LONG
-            ).show()
-        }
-    }
-
-    private fun downloadFile() {
-        val storageRef = storage.reference
-        val ref = storageRef.child("app_icon.jpg")
-
-        val localFile = File.createTempFile("images", "jpg")
-
-        ref.getFile(localFile).addOnSuccessListener {
-            Toast.makeText(
-                this, "Download successful.",
-                Toast.LENGTH_LONG
-            ).show()
-        }.addOnFailureListener {
-            Toast.makeText(
-                this, "Download failed",
                 Toast.LENGTH_LONG
             ).show()
         }

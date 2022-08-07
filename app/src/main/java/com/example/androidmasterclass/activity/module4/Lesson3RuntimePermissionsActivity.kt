@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -126,8 +127,9 @@ class Lesson3RuntimePermissionsActivity : AppCompatActivity() {
 
     private fun writeToExternalStorage() {
         lifecycleScope.launch {
-            saveDocument(applicationContext, "I love Educative")
-            Toast.makeText(applicationContext, "Written successfully!", Toast.LENGTH_LONG)
+            val writeText = findViewById<EditText>(R.id.write_text_to_file)
+            saveDocument(applicationContext, writeText.text.toString())
+            Toast.makeText(applicationContext, "Written successfully!", Toast.LENGTH_SHORT)
                 .show()
         }
     }
@@ -136,8 +138,7 @@ class Lesson3RuntimePermissionsActivity : AppCompatActivity() {
         lifecycleScope.launch {
             filePath?.let { it1 ->
                 val data = read(applicationContext, it1)
-
-                Toast.makeText(applicationContext, "File data is: $data ", Toast.LENGTH_LONG)
+                Toast.makeText(applicationContext, "File data is: $data ", Toast.LENGTH_SHORT)
                     .show()
             }
         }
