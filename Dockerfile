@@ -1,4 +1,4 @@
-FROM maskaravivek/android-masterclass as builder
-
-FROM maskaravivek/android-masterclass
-COPY --from=builder /cache /cache
+FROM maskaravivek/android-masterclass-cache:latest
+WORKDIR /app
+COPY ./ ./
+RUN ./gradlew build --no-daemon

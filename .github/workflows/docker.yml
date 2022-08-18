@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: maskaravivek/android-masterclass-cache:latest
+          tags: maskaravivek/android-masterclass-cached:latest
