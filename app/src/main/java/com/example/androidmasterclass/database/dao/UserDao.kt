@@ -7,22 +7,23 @@ import com.example.androidmasterclass.database.entity.User
 @Dao
 interface UserDao {
     @Insert(onConflict = REPLACE)
-    fun insert(user: User)
+    suspend fun insert(user: User)
 
-    fun insertMultiple(vararg users: User)
+    @Insert
+    suspend fun insertMultiple(vararg users: User)
 
     @Update
-    fun update(user: User)
+    suspend fun update(user: User)
 
     @Delete
-    fun delete(user: User)
+    suspend fun delete(user: User)
 
     @Delete
-    fun deleteMultiple(vararg users: User)
+    suspend fun deleteMultiple(vararg users: User)
 
     @Query("SELECT * FROM user")
-    fun getAll(): List<User>
+    suspend fun getAll(): List<User>
 
-    @Query("SELECT * FROM user where email=:email")
-    fun getByEmailId(email: String): List<User>
+    @Query("SELECT * FROM user where email=:email limit 1")
+    suspend fun getByEmailId(email: String): User
 }

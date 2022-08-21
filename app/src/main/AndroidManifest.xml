@@ -24,23 +24,7 @@
             android:name=".activity.module8.Module8Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module8.Lesson1RoomPersistenceActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module8.Lesson2RoomModelsActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module8.Lesson3RoomDaoActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module8.Lesson4RoomRepositoryActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module8.Lesson5RoomDBAndMigrationActivity"
+            android:name=".activity.module8.Lesson5RoomDBActivity"
             android:exported="true" />
 
         <activity

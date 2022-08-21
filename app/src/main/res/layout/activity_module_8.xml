@@ -10,37 +10,9 @@
     tools:context=".activity.module6.Module6Activity">
 
     <Button
-        android:id="@+id/module_8_lesson_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:text="Room persistence"/>
-
-    <Button
-        android:id="@+id/module_8_lesson_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:text="Room Models"/>
-
-    <Button
-        android:id="@+id/module_8_lesson_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:text="Room DAOs"/>
-
-    <Button
-        android:id="@+id/module_8_lesson_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:text="Room Repository"/>
-
-    <Button
         android:id="@+id/module_8_lesson_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Room DB and migrations"/>
+        android:text="Room DB"/>
 </LinearLayout>
