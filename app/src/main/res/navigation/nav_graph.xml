@@ -7,20 +7,18 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.androidmasterclass.FirstFragment"
+        android:name="com.example.androidmasterclass.fragments.module7.NavSampleFragment1"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
-
+        tools:layout="@layout/fragment_nav_sample_1" >
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.androidmasterclass.SecondFragment"
+        android:name="com.example.androidmasterclass.fragments.module7.NavSampleFragment2"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
-
+        tools:layout="@layout/fragment_nav_sample_2" >
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />

@@ -1,7 +1,6 @@
 package com.example.androidmasterclass.activity.module7
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +25,7 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
         button3.setOnClickListener {
             val randomNumberWorker: WorkRequest =
                 OneTimeWorkRequestBuilder<GenerateRandomNumberWorker>()
-                    .setInitialDelay(15, TimeUnit.SECONDS)
+                    .setInitialDelay(15, TimeUnit.MINUTES)
                     .build()
             WorkManager
                 .getInstance(this)
