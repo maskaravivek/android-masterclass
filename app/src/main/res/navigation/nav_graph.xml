@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.androidmasterclass.fragments.module7.NavSampleFragment1"
+        android:name="com.educative.android.hello.fragments.module7.NavSampleFragment1"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_nav_sample_1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.androidmasterclass.fragments.module7.NavSampleFragment2"
+        android:name="com.educative.android.hello.fragments.module7.NavSampleFragment2"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_nav_sample_2" >
         <action

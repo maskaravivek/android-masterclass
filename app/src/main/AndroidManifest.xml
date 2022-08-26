@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.androidmasterclass">
+    package="com.example.educative.hello">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -21,68 +21,68 @@
         android:theme="@style/Theme.AndroidMasterclass">
 
         <activity
-            android:name=".activity.module8.Module8Activity"
+            android:name="com.educative.android.hello.activity.module8.Module8Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module8.Lesson5RoomDBActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module7.Module7Activity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.module7.Lesson1WorkManagerActivity"
+            android:name="com.educative.android.hello.activity.module8.Lesson5RoomDBActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module7.Lesson2CameraXActivity"
+            android:name="com.educative.android.hello.activity.module7.Module7Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.educative.android.hello.activity.module7.Lesson1WorkManagerActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module7.Lesson3NavigationActivity"
+            android:name="com.educative.android.hello.activity.module7.Lesson2CameraXActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module7.Lesson4LazyLoadingActivity"
+            android:name="com.educative.android.hello.activity.module7.Lesson3NavigationActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module4.Module4Activity"
+            android:name="com.educative.android.hello.activity.module7.Lesson4LazyLoadingActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module4.Lesson3RuntimePermissionsActivity"
+            android:name="com.educative.android.hello.activity.module4.Module4Activity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module4.Lesson2DeclaringManifestPermissionsActivity"
+            android:name="com.educative.android.hello.activity.module4.Lesson3RuntimePermissionsActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module4.Lesson4UserLocationActivity"
+            android:name="com.educative.android.hello.activity.module4.Lesson2DeclaringManifestPermissionsActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module3.ExampleSecondActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.module3.Lesson1IntentsActivity"
+            android:name="com.educative.android.hello.activity.module4.Lesson4UserLocationActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module3.Lesson2BroadcastReceiverActivity"
+            android:name="com.educative.android.hello.activity.module3.ExampleSecondActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.educative.android.hello.activity.module3.Lesson1IntentsActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module3.Lesson3ProcessesAndThreadsActivity"
+            android:name="com.educative.android.hello.activity.module3.Lesson2BroadcastReceiverActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module3.Lesson4ServiceAndWorkersActivity"
+            android:name="com.educative.android.hello.activity.module3.Lesson3ProcessesAndThreadsActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module3.ExampleReceiveUrlActivity"
+            android:name="com.educative.android.hello.activity.module3.Lesson4ServiceAndWorkersActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.educative.android.hello.activity.module3.ExampleReceiveUrlActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -92,119 +92,119 @@
         </activity>
 
         <activity
-            android:name=".activity.module3.Module3Activity"
+            android:name="com.educative.android.hello.activity.module3.Module3Activity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module6.Module6Activity"
+            android:name="com.educative.android.hello.activity.module6.Module6Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module6.Lesson1ExampleLifecycleOwnerActivity"
-            android:exported="true" />
-
-        <activity
-            android:name=".activity.module6.Lesson2ViewModelActivity"
+            android:name="com.educative.android.hello.activity.module6.Lesson1ExampleLifecycleOwnerActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module6.Lesson3LiveDataActivity"
+            android:name="com.educative.android.hello.activity.module6.Lesson2ViewModelActivity"
             android:exported="true" />
 
         <activity
-            android:name=".activity.module9.Lesson1RetrofitActivity"
+            android:name="com.educative.android.hello.activity.module6.Lesson3LiveDataActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.educative.android.hello.activity.module9.Lesson1RetrofitActivity"
             android:exported="true" />
         <activity
-            android:name=".activity.module9.Module9Activity"
+            android:name="com.educative.android.hello.activity.module9.Module9Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module5.Lesson4FirebaseCloudMessaging"
+            android:name="com.educative.android.hello.activity.module5.Lesson4FirebaseCloudMessaging"
             android:exported="true" />
         <activity
-            android:name=".activity.module5.Lesson3FirebaseStorage"
+            android:name="com.educative.android.hello.activity.module5.Lesson3FirebaseStorage"
             android:exported="true" />
         <activity
-            android:name=".activity.module1.Module1Activity"
+            android:name="com.educative.android.hello.activity.module1.Module1Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module1.Lesson3ExampleActivityWithFragment"
+            android:name="com.educative.android.hello.activity.module1.Lesson3ExampleActivityWithFragment"
             android:exported="true"
             android:label="@string/title_activity_example_with_fragment" />
         <activity
-            android:name=".activity.module1.Lesson4ActivityWithCustomView"
+            android:name="com.educative.android.hello.activity.module1.Lesson4ActivityWithCustomView"
             android:exported="true"
             android:label="@string/title_activity_example_with_fragment"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module1.Lesson2ExampleActivity"
+            android:name="com.educative.android.hello.activity.module1.Lesson2ExampleActivity"
             android:exported="true"
             android:label="@string/title_activity_example"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module1.Lesson4ExampleActivityWithInfoView"
+            android:name="com.educative.android.hello.activity.module1.Lesson4ExampleActivityWithInfoView"
             android:exported="true"
             android:label="@string/title_activity_example_custom_view"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson6WebviewActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson6WebviewActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.SimpleWebviewDemoActivity"
+            android:name="com.educative.android.hello.activity.module2.SimpleWebviewDemoActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson4MenuActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson4MenuActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson3ImagesActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson3ImagesActivity"
             android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.ImagesActivity"
+            android:name="com.educative.android.hello.activity.module2.ImagesActivity"
             android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.MenuActivity"
+            android:name="com.educative.android.hello.activity.module2.MenuActivity"
             android:exported="true"
             android:label="Menus" />
         <activity
-            android:name=".activity.module2.Lesson1BottomNavigationActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson1BottomNavigationActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.RecyclerViewActivity"
+            android:name="com.educative.android.hello.activity.module2.RecyclerViewActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module2.Lesson5RecyclerViewActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson5RecyclerViewActivity"
             android:exported="true"
             android:label="@string/title_activity_simple_webview"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module5.Module5Activity"
+            android:name="com.educative.android.hello.activity.module5.Module5Activity"
             android:exported="true"
             android:label="@string/module_5_title"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module5.Lesson1FirebaseAuth"
+            android:name="com.educative.android.hello.activity.module5.Lesson1FirebaseAuth"
             android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module5.EmailPasswordSignupActivity"
+            android:name="com.educative.android.hello.activity.module5.EmailPasswordSignupActivity"
             android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".activity.module5.Lesson2FirebaseRealtimeDatabase"
+            android:name="com.educative.android.hello.activity.module5.Lesson2FirebaseRealtimeDatabase"
             android:exported="true"
             android:theme="@style/Theme.AndroidMasterclass.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.educative.android.hello.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -213,14 +213,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.module2.Module2Activity"
+            android:name="com.educative.android.hello.activity.module2.Module2Activity"
             android:exported="true" />
         <activity
-            android:name=".activity.module2.Lesson2DialogActivity"
+            android:name="com.educative.android.hello.activity.module2.Lesson2DialogActivity"
             android:exported="true" />
 
         <service
-            android:name=".service.MyFirebaseMessagingService"
+            android:name="com.educative.android.hello.service.MyFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -228,12 +228,12 @@
         </service>
 
         <service
-            android:name=".service.MyCustomService"
+            android:name="com.educative.android.hello.service.MyCustomService"
             android:exported="true">
         </service>
 
         <receiver
-            android:name=".receivers.CustomBroadcastReceiver"
+            android:name="com.educative.android.hello.receivers.CustomBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.example.sample.NEW_VIDEO" />

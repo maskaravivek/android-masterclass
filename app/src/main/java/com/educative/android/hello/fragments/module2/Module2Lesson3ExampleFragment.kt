@@ -1,0 +1,18 @@
+package com.educative.android.hello.fragments.module2
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.educative.hello.R
+
+class Module2Lesson3ExampleFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_module_1_lesson_3, container, false)
+    }
+}

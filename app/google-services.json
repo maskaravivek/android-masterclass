@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "116997606935",
+    "firebase_url": "https://android-masterclass-default-rtdb.firebaseio.com",
     "project_id": "android-masterclass",
     "storage_bucket": "android-masterclass.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:116997606935:android:c2f3d0dbc9c271f5111652",
+        "mobilesdk_app_id": "1:116997606935:android:089573a69a21d560111652",
         "android_client_info": {
-          "package_name": "com.example.androidmasterclass"
+          "package_name": "com.example.educative.hello"
         }
       },
       "oauth_client": [

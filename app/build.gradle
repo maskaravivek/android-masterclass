@@ -11,7 +11,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.androidmasterclass"
+        applicationId "com.example.educative.hello"
         minSdkVersion 24
         targetSdkVersion 32
         versionCode 1
@@ -81,13 +81,10 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:20.0.0'
 
     //camera x
-    def camerax_version = "1.1.0-beta01"
     implementation 'androidx.camera:camera-core:1.2.0-alpha04'
     implementation 'androidx.camera:camera-camera2:1.2.0-alpha04'
     implementation 'androidx.camera:camera-lifecycle:1.2.0-alpha04'
-    implementation 'androidx.camera:camera-video:1.2.0-alpha04'
     implementation 'androidx.camera:camera-view:1.2.0-alpha04'
-    implementation 'androidx.camera:camera-extensions:1.2.0-alpha04'
 
     //paging
     implementation "androidx.paging:paging-runtime-ktx:3.1.1"
