@@ -43,6 +43,9 @@ class Lesson4UserLocationActivity : AppCompatActivity() {
                         if (location != null) {
                             titleTv.text = "${location.latitude}, ${location?.longitude}"
                         }
+                    }.addOnFailureListener {
+                        val titleTv = findViewById<TextView>(R.id.last_location_tv)
+                        titleTv.text = it.message
                     }
                 }
             }

@@ -58,14 +58,14 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
-                    updateUI(user)
+                    updateUI("Signed up as: ${user?.email}")
                 } else {
                     Log.w(TAG, "createUserWithEmail:failure", task.exception)
                     Toast.makeText(
                         baseContext, "Authentication failed.",
                         Toast.LENGTH_SHORT
                     ).show()
-                    updateUI(null)
+                    updateUI("Error: ${task.exception?.message}")
                 }
             }
     }
@@ -78,21 +78,21 @@ class EmailPasswordSignupActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "signInWithEmail:success")
                     val user = auth.currentUser
-                    updateUI(user)
+                    updateUI("Logged in as: ${user?.email}")
                 } else {
                     Log.w(TAG, "signInWithEmail:failure", task.exception)
                     Toast.makeText(
                         baseContext, "Authentication failed.",
                         Toast.LENGTH_SHORT
                     ).show()
-                    updateUI(null)
+                    updateUI("Error: ${task.exception?.message}")
                 }
             }
     }
 
-    private fun updateUI(user: FirebaseUser?) {
+    private fun updateUI(text: String) {
         val userDetailsTv = findViewById<TextView>(R.id.user_details)
-        userDetailsTv.text = "Logged in as: ${user?.email}"
+        userDetailsTv.text = text
     }
 
     private fun reload() {

@@ -13,7 +13,4 @@ class MyPagingViewModel : ViewModel(), DefaultLifecycleObserver {
         Pager(PagingConfig(pageSize = 10))
         { MyPagingSource() }
             .flow.cachedIn(viewModelScope)
-
-    init {
-    }
 }

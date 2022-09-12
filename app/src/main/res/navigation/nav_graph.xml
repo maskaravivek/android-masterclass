@@ -3,24 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/ItemListFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/ItemListFragment"
         android:name="com.educative.android.hello.fragments.module7.NavSampleFragment1"
-        android:label="@string/first_fragment_label"
+        android:label="Item list page"
         tools:layout="@layout/fragment_nav_sample_1" >
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/ItemDetailsFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            app:destination="@id/ItemImageFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/ItemDetailsFragment"
         android:name="com.educative.android.hello.fragments.module7.NavSampleFragment2"
-        android:label="@string/second_fragment_label"
+        android:label="Item details page"
         tools:layout="@layout/fragment_nav_sample_2" >
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/ItemListFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ItemImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ItemImageFragment"
+        android:name="com.educative.android.hello.fragments.module7.NavSampleFragment3"
+        android:label="Item image page"
+        tools:layout="@layout/fragment_nav_sample_3" >
     </fragment>
 </navigation>

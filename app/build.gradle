@@ -27,6 +27,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Disables PNG crunching for the release build type.
+            crunchPngs true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
