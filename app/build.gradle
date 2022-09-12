@@ -35,7 +35,7 @@ android {
     buildTypes {
         debug {
             // Disables PNG crunching for the release build type.
-            crunchPngs true
+            crunchPngs false
         }
         release {
             minifyEnabled false
