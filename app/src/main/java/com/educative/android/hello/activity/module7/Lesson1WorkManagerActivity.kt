@@ -25,7 +25,7 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
         button3.setOnClickListener {
             val randomNumberWorker: WorkRequest =
                 OneTimeWorkRequestBuilder<GenerateRandomNumberWorker>()
-                    .setInitialDelay(15, TimeUnit.MINUTES)
+                    .setInitialDelay(15, TimeUnit.SECONDS)
                     .build()
             WorkManager
                 .getInstance(this)
@@ -58,7 +58,7 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
         button3.setOnClickListener {
             val randomNumberWorker: PeriodicWorkRequest = PeriodicWorkRequest
                 .Builder(UserLocationPeriodicWorker::class.java, 5, TimeUnit.MINUTES)
-                .setInitialDelay(15, TimeUnit.SECONDS)
+                .setInitialDelay(1, TimeUnit.MINUTES)
                 .build();
             WorkManager
                 .getInstance(this)
