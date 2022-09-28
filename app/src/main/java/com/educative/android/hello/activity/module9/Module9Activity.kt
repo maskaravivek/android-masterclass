@@ -11,12 +11,21 @@ class Module9Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_module_9)
         startLesson1()
+        startLesson2()
     }
 
     private fun startLesson1() {
-        val button = findViewById<Button>(R.id.module_6_lesson_2)
+        val button = findViewById<Button>(R.id.module_9_lesson_1)
         button.setOnClickListener {
             val intent = Intent(this, Lesson1RetrofitActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startLesson2() {
+        val button = findViewById<Button>(R.id.module_9_lesson_2)
+        button.setOnClickListener {
+            val intent = Intent(this, Lesson2KotlinCoroutinesActivity::class.java)
             startActivity(intent)
         }
     }

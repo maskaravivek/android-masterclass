@@ -10,19 +10,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.educative.android.hello.adapters.RecyclerViewAdapter
 import com.example.educative.hello.R
 import com.educative.android.hello.interfaces.CountryListInterface
+import com.educative.android.hello.interfaces.CountryListKtCoroutineInterface
 import com.educative.android.hello.models.Country
+import kotlinx.coroutines.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
-class Lesson1RetrofitActivity : AppCompatActivity() {
+class Lesson2KotlinCoroutinesActivity : AppCompatActivity() {
 
     var dataset: ArrayList<String> = arrayListOf()
     lateinit var adapter: RecyclerViewAdapter;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_module_9_lesson_1_retrofit)
+        setContentView(R.layout.activity_module_9_lesson_2_kotlin_coroutines)
         setRecyclerView()
         getCountryList()
     }
@@ -44,32 +46,16 @@ class Lesson1RetrofitActivity : AppCompatActivity() {
     }
 
     private fun getCountryListFromAPI() {
-        val apiInterface = CountryListInterface.create().getCountries()
+        val apiInterface = CountryListKtCoroutineInterface.create()
 
-        apiInterface.enqueue(object : Callback<List<Country>> {
-            override fun onResponse(
-                call: Call<List<Country>>?,
-                response: Response<List<Country>>?
-            ) {
-                Log.d("Lesson1RetrofitActivity", response!!.body().toString())
-
-                if (response?.body() != null) {
-                    Log.d("Lesson1RetrofitActivity", "setting body")
-                    response.body()!!.forEach {
-                        dataset.add(it.name!!)
-                    }
-                    adapter.notifyDataSetChanged()
-                    Log.d("Lesson1RetrofitActivity", dataset.toString())
-                }
+        CoroutineScope(Dispatchers.IO).launch {
+            val response = apiInterface.getCountries()
+            response.body()!!.forEach {
+                dataset.add(it.name!!)
             }
-
-            override fun onFailure(call: Call<List<Country>>?, t: Throwable?) {
-                Log.d("Lesson1RetrofitActivity", t.toString())
-                Toast.makeText(
-                    baseContext, "Error occurred!",
-                    Toast.LENGTH_SHORT
-                ).show()
+            withContext(Dispatchers.Main) {
+                adapter.notifyDataSetChanged()
             }
-        })
+        }
     }
 }

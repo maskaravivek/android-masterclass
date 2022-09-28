@@ -15,7 +15,7 @@ class RecyclerViewActivity: AppCompatActivity() {
     }
 
     private fun setRecyclerView() {
-        val dataset: Array<String> = arrayOf("green", "red", "blue")
+        val dataset: ArrayList<String> = arrayListOf("green", "red", "blue")
         val adapter = RecyclerViewAdapter(dataset)
         val layoutManager = LinearLayoutManager(applicationContext)
         var recyclerView = findViewById(R.id.recycler_view) as RecyclerView

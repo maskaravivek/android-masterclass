@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.educative.hello.R
 import com.educative.android.hello.viewholder.RecyclerViewHolder
 
-class RecyclerViewAdapter(private val dataSet: Array<String>) :
+class RecyclerViewAdapter(private val dataSet: ArrayList<String>) :
     RecyclerView.Adapter<RecyclerViewHolder>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): RecyclerViewHolder {

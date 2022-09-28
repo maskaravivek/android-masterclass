@@ -113,6 +113,11 @@
         <activity
             android:name="com.educative.android.hello.activity.module9.Lesson1RetrofitActivity"
             android:exported="true" />
+
+        <activity
+            android:name="com.educative.android.hello.activity.module9.Lesson2KotlinCoroutinesActivity"
+            android:exported="true" />
+
         <activity
             android:name="com.educative.android.hello.activity.module9.Module9Activity"
             android:exported="true" />
