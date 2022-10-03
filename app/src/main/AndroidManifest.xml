@@ -21,6 +21,13 @@
         android:theme="@style/Theme.AndroidMasterclass">
 
         <activity
+            android:name="com.educative.android.hello.activity.module10.Module10Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.educative.android.hello.activity.module10.Lesson1SingletonClassActivity"
+            android:exported="true" />
+
+        <activity
             android:name="com.educative.android.hello.activity.module8.Module8Activity"
             android:exported="true" />
         <activity

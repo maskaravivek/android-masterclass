@@ -83,4 +83,5 @@
     <string name="fetch_user_location">User location</string>
     <string name="manifest_permissions">Manifest permissions</string>
     <string name="kotlin_coroutines">Kotlin coroutines</string>
+    <string name="singleton_classes">Singleton classes</string>
 </resources>
