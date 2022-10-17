@@ -84,4 +84,7 @@
     <string name="manifest_permissions">Manifest permissions</string>
     <string name="kotlin_coroutines">Kotlin coroutines</string>
     <string name="singleton_classes">Singleton classes</string>
+    <string name="module_10">Module 10</string>
+    <string name="hilt_basic_example">Hilt basic example</string>
+    <string name="hilt_module_example">Hilt Module example</string>
 </resources>

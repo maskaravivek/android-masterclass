@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.educative.android.hello.activity.module1.Module1Activity
+import com.educative.android.hello.activity.module10.Module10Activity
 import com.educative.android.hello.activity.module2.Module2Activity
 import com.educative.android.hello.activity.module3.Module3Activity
 import com.educative.android.hello.activity.module4.Module4Activity
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         startModule7()
         startModule8()
         startModule9()
+        startModule10()
     }
 
     private fun startModule1() {
@@ -98,6 +100,14 @@ class MainActivity : AppCompatActivity() {
         val buttonModule9 = findViewById<Button>(R.id.module_9)
         buttonModule9.setOnClickListener {
             val intent = Intent(this, Module9Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun startModule10() {
+        val buttonModule10 = findViewById<Button>(R.id.module_10)
+        buttonModule10.setOnClickListener {
+            val intent = Intent(this, Module10Activity::class.java)
             startActivity(intent)
         }
     }

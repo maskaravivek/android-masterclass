@@ -22,4 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:text="Run worker every 5 minutes"/>
+
+    <TextView
+        android:id="@+id/worker_output"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

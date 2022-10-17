@@ -2,6 +2,7 @@ package com.educative.android.hello.activity.module7
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -32,21 +33,17 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
                 .enqueue(randomNumberWorker)
             WorkManager.getInstance(this).getWorkInfoByIdLiveData(randomNumberWorker.id)
                 .observe(this, Observer { info ->
+                    var workerOutputTv = findViewById<TextView>(R.id.worker_output)
                     if (info != null && (info.state.isFinished)) {
                         if (info.state.name === "SUCCEEDED") {
                             val myResult = info.outputData.getInt(
                                 "randomNumber",
                                 0
                             )
-                            Toast.makeText(
-                                baseContext, "Result $myResult",
-                                Toast.LENGTH_SHORT
-                            ).show()
+
+                            workerOutputTv.text = "Result $myResult"
                         } else {
-                            Toast.makeText(
-                                baseContext, "Failed",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                            workerOutputTv.text = "Worker generated number 750. Task marked as failed"
                         }
                     }
                 })
@@ -57,7 +54,7 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
         val button3 = findViewById<Button>(R.id.run_worker_periodically)
         button3.setOnClickListener {
             val randomNumberWorker: PeriodicWorkRequest = PeriodicWorkRequest
-                .Builder(UserLocationPeriodicWorker::class.java, 5, TimeUnit.MINUTES)
+                .Builder(UserLocationPeriodicWorker::class.java, 15, TimeUnit.MINUTES)
                 .setInitialDelay(1, TimeUnit.MINUTES)
                 .build();
             WorkManager
