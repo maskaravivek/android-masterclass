@@ -22,7 +22,7 @@
         android:theme="@style/Theme.AndroidMasterclass">
 
         <activity
-            android:name="com.educative.android.hello.activity.module10.Module10Activity"
+            android:name="com.educative.android.hello.activity.module10.Module11Activity"
             android:exported="true" />
         <activity
             android:name="com.educative.android.hello.activity.module10.Lesson2HiltExampleActivity"

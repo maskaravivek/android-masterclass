@@ -3,14 +3,16 @@ package com.educative.android.hello.activity.module7
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.work.*
-import com.educative.android.hello.worker.UserLocationPeriodicWorker
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.PeriodicWorkRequest
+import androidx.work.WorkManager
+import androidx.work.WorkRequest
 import com.educative.android.hello.worker.GenerateRandomNumberWorker
-import java.util.concurrent.TimeUnit
+import com.educative.android.hello.worker.UserLocationPeriodicWorker
 import com.example.educative.hello.R
+import java.util.concurrent.TimeUnit
 
 class Lesson1WorkManagerActivity : AppCompatActivity() {
 
@@ -24,6 +26,8 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
     private fun runWorkerWithDelay() {
         val button3 = findViewById<Button>(R.id.run_worker_with_delay)
         button3.setOnClickListener {
+            var workerOutputTv = findViewById<TextView>(R.id.worker_output)
+            workerOutputTv.text = "Worker result will be visible in 15 seconds"
             val randomNumberWorker: WorkRequest =
                 OneTimeWorkRequestBuilder<GenerateRandomNumberWorker>()
                     .setInitialDelay(15, TimeUnit.SECONDS)
@@ -33,7 +37,6 @@ class Lesson1WorkManagerActivity : AppCompatActivity() {
                 .enqueue(randomNumberWorker)
             WorkManager.getInstance(this).getWorkInfoByIdLiveData(randomNumberWorker.id)
                 .observe(this, Observer { info ->
-                    var workerOutputTv = findViewById<TextView>(R.id.worker_output)
                     if (info != null && (info.state.isFinished)) {
                         if (info.state.name === "SUCCEEDED") {
                             val myResult = info.outputData.getInt(

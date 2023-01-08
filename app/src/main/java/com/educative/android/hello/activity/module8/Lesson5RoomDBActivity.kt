@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
@@ -42,6 +43,8 @@ class Lesson5RoomDBActivity : AppCompatActivity() {
             userEmail = email
             lifecycleScope.launch {
                 userDao.insert(User(id = 0, name = username, email = email, age = age.toInt(), address = address))
+                Toast.makeText(applicationContext, "Data written successfully!", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }

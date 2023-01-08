@@ -10,7 +10,13 @@ import com.educative.android.hello.database.entity.User
 
 @Database(entities = [User::class],
     exportSchema = true,
-    version = 1
+    autoMigrations = [
+        AutoMigration (
+            from = 1,
+            to = 2
+        )
+    ],
+    version = 3
 )
 abstract class MyDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao

@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
+import android.os.Looper
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.result.ActivityResultLauncher
@@ -13,8 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.educative.hello.R
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.*
 
 
 class Lesson4UserLocationActivity : AppCompatActivity() {
@@ -68,6 +68,32 @@ class Lesson4UserLocationActivity : AppCompatActivity() {
                     titleTv.text = "${location.latitude}, ${location?.longitude}"
                 }
             }
+        }
+    }
+
+    private fun fetchLocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            val locationRequest = LocationRequest.create().apply {
+                interval = 100
+                fastestInterval = 50
+                priority = Priority.PRIORITY_LOW_POWER
+                maxWaitTime = 100
+            }
+
+            val locationCallback = object : LocationCallback() {
+                //handle location result
+            }
+
+            fusedLocationClient
+                .requestLocationUpdates(
+                    locationRequest,
+                    locationCallback,
+                    Looper.getMainLooper()
+                )
         }
     }
 
